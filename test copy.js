@@ -1,6 +1,6 @@
 
 function openSignInPage() {
-  const secondWindow = window.open('/Sing_in.html', '_blank');
+  const secondWindow = window.open('Sing_in.html', '_blank');
   secondWindow.secondWindowHandler = window;
 }
 // Function to close the second page and update the first page
