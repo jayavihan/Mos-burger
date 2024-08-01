@@ -1,0 +1,15 @@
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info img {
+    margin-right: 10px;
+  }
+  
+  .basket-content {
+    max-height: 200px; /* Adjust height as needed */
+    overflow-y: auto;
+  }
+  

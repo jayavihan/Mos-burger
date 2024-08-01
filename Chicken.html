@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>... Chicken </title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="MOS_Burger_Shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body style="background-color:#FFF6F0;">
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top" style="background-color: #fac9af;">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo2.jpg" width="50" height="50" alt="MOS Burger Logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="/index.html">Offers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Burgers.html">Burgers</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Submarines.html">Submarines</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Fries.html">Fries</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Pasta.html">Pasta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Chicken</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Beverages.html">Beverages</a></li>
+            </ul>
+            <!-- <a class="btn btn-outline-primary my-2 my-sm-0" href="/Sing_in.html">Sign In</a> -->
+            <a id="signInBtn" class="btn btn-outline-primary my-2 my-sm-0" href="#" >Sign In</a>
+
+        </div>
+
+    </nav>
+
+      <!-- Basket Popup Window within Navbar Row -->
+      <div id="basketRow" class="container-fluid" style="display: none; background-color: #ffffff;margin-top: 5rem;">
+        <div class="row">
+          <div class="col-md-2 d-flex align-items-center">
+            <div class="user-info" display: flex;>
+              <img src="/img/sing in.png" alt="id" class="img-fluid rounded-circle" width="50">
+              <span class="ml-2">User 0712345678</span>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="basket-content" style="max-height: 200px; overflow-y: auto;">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                  </tr>
+                </thead>
+                <tbody id="basketItems">
+                  <!-- Basket items will be added here dynamically -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex align-items-center justify-content-end">
+            <div class="total-checkout">
+              <h5>Total: <span id="totalPrice">Rs 0.00</span></h5>
+              <button class="btn btn-success ml-2">Check Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="container my-5">
+        <section id="Burgers"  style="margin-top: 7rem;">
+        <h2 class="text-center " style="color: #dddddd; background-color: #B43600; width:90% align-bottom; font-weight: 400;">Chicken</h2></br>
+        </section>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card"   >
+                    <img src="img/Fried Chicken.png" class="card-img-top" alt="Classic Burger" style="height: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fried Chicken</h5>
+                        <div class="form-group">
+                            <label for="quantity1">Select Quantity</label>
+                            <input type="number" class="form-control" id="quantity1" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="size1">Select Size</label>
+                            <select class="form-control" id="size1">
+                                <option>small 1200.00 </option>
+                                <option>Medium 2300.00</option>
+                                <option>Large 3100.00</option>
+
+                            </select>
+                        </div>
+                        <button class="btn btn-warning btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="img/Hot Wings.png" class="card-img-top" alt="Chicken Burger" style="height: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hot Wings</h5>
+                        <div class="form-group">
+                            <label for="quantity2">Select Quantity</label>
+                            <input type="number" class="form-control" id="quantity2" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="size2">Select Size</label>
+                            <select class="form-control" id="size2">
+                                <option>Large 2400.00 </option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="/img/Devilled Chicken.png" class="card-img-top" alt="Bacon Burger" style="height: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Devilled Chicken</h5>
+                        <div class="form-group">
+                            <label for="quantity3">Select Quantity</label>
+                            <input type="number" class="form-control" id="quantity3" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="size3">Select Size</label>
+                            <select class="form-control" id="size3">
+                                <option>Regular 900.00</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div> 
+            <!-- Card 4 -->  
+            <div class="col-md-6 col-lg-3 mb-3">
+                <div class="card">
+                    <img src="/img/BBQ Chicken.png" class="card-img-top" alt="Bacon Burger" style="height: 14rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">BBQ Chicken</h5>
+                        <div class="form-group">
+                            <label for="quantity3">Select Quantity</label>
+                            <input type="number" class="form-control" id="quantity3" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="size3">Select Size</label>
+                            <select class="form-control" id="size3">
+                                <option>Regular 2100.00</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-warning btn-block">Add to Cart</button>
+                    </div>
+                </div>
+            </div>         
+        </div>
+    </div>
+
+    <footer style="background-color: #B43600; color: white; padding: 10px 0;">
+        <div style="display: flex; justify-content: space-around;">
+            <div>
+                <h6>CONTACT US</h6>
+                <p>+94112345678<br>mosburger@gmail.com<br><a href="#" style="color: white;">Find a Store</a></p>
+            </div>
+            <div>
+                <h6>CUSTOMER SERVICE</h6>
+                <p><a href="#" style="color: white;">Ordering & Payment</a><br>
+                   <a href="#" style="color: white;">Shipping</a><br>
+                   <a href="#" style="color: white;">Returns</a><br>
+                   <a href="#" style="color: white;">FAQ</a></p>
+            </div>
+            <div>
+                <h6>INFORMATION</h6>
+                <p><a href="#" style="color: white;">About</a><br>
+                   <a href="#" style="color: white;">Work With Us</a><br>
+                   <a href="#" style="color: white;">Privacy Policy</a><br>
+                   <a href="#" style="color: white;">Terms & Conditions</a><br>
+                   <a href="#" style="color: white;">Press Enquiries</a></p>
+            </div>
+            <div>
+                <h6>Subscribe to our Newsletter via Email</h6>
+                <form style="display: flex;">
+                    <input type="email" placeholder="Email Address" style="padding: 5px; flex-grow: 1;">
+                    <button type="submit" style="padding: 5px; background-color: #fac9af; color: #E44A20;">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-twitter"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: white; margin: 0 10px;"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="/test copy.js"></script>
+
+</body>
+</html>

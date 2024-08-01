@@ -1,0 +1,17 @@
+#basketPopup {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    width: 300px;
+    z-index: 1000;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info img {
+    margin-right: 10px;
+  }
+  
